@@ -1,6 +1,7 @@
- public static int[] dutch(int a[],int low, int high)          //low is the lowest value(0 in the below example) and high is the highest value i,e 2
+ public static int[] dutch(int a[],int low, int high)          //low is the lowest value(0 in the below example) 
+                                                                //and high is the highest value i,e 2
     {
-     if(a.length==0)                                           //If length of array is zero
+     if(a.length==0)                                           //If length of array length is zero
         return a;
       int lower=0;
       int upper=a.length-1;
@@ -8,11 +9,11 @@
 
       while(a[lower]==low && lower<a.length)                   //lower is assigned to first index whose value is not low
           lower++;
-      System.out.println("lower is "+lower);
+     
 
       while(a[upper]==high && upper>=0)                       //upper is assigned to last index whose value is not high
           upper--;
-      System.out.println("upper is "+upper);
+      
 
       int pivot=lower;                                            //pivot is used to keep the index of mid value
                                                                   //from beginning for swapping with low
@@ -31,8 +32,8 @@
         {
          a[lower]=a[upper];
          a[upper]=high; 
-         upper--;                                                //not increasing pivot because the swpped value could 
-        }                                                          either be low or mid (0 or 1 in our case)
+         upper--;                                                //not increasing pivot because the swapped value could 
+        }                                                        //either be low or mid (0 or 1 in our case)
           else
               lower++;
             
