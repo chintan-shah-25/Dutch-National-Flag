@@ -1,3 +1,5 @@
+ // Please Look at the readme file for problem explanation
+ 
  public static int[] dutch(int a[],int low, int high)          //low is the lowest value(0 in the below example) 
                                                                 //and high is the highest value i,e 2
     {
@@ -43,21 +45,56 @@
       }
       
   /*
+Intial
+ 
 int y[]={0,1,2,2,1,1,0,2,1,0,0};
 
 lower is 1
 upper is 10
+pivot is 1
 
 Intermediate steps
 
+lower is 2
+Upper is 10
+Pivot is 1
         0        1        2        2        1        1        0        2        1        0        0
+lower is 2
+Upper is 9
+Pivot is 1
         0        1        0        2        1        1        0        2        1        0        2
+lower is 3
+Upper is 9
+Pivot is 2
         0        0        1        2        1        1        0        2        1        0        2
+lower is 3
+Upper is 8
+Pivot is 2
         0        0        1        0        1        1        0        2        1        2        2
+lower is 4
+Upper is 8
+Pivot is 3
         0        0        0        1        1        1        0        2        1        2        2
+lower is 5
+Upper is 8
+Pivot is 3
         0        0        0        1        1        1        0        2        1        2        2
+lower is 6
+Upper is 8
+Pivot is 3
         0        0        0        1        1        1        0        2        1        2        2
+lower is 7
+Upper is 8
+Pivot is 4
         0        0        0        0        1        1        1        2        1        2        2
+lower is 7
+Upper is 7
+Pivot is 4
         0        0        0        0        1        1        1        1        2        2        2
+lower is 8
+Upper is 7
+Pivot is 4
         0        0        0        0        1        1        1        1        2        2        2
+        
+Finally the sorted array is returned
   */
